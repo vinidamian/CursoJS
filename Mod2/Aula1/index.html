@@ -5,8 +5,15 @@
     </head>
 
     <body>
+        <div id="app">
+            <button onmouseover="mostraAlerta()">Me pressione</button>
+            <input onkeypress="mostraAlerta()" />
+        </div>
+
         <script>
-            
+            function mostraAlerta(){
+                alert('Botao foi clicado');
+            }
         </script>
     </body>
 </html>
