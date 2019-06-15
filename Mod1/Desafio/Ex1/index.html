@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JavaScript</title>
+</head>
+
+<body>
+    <script>
+        var endereco = {
+            rua: "Rua dos pinheiros",
+            numero: 1293,
+            bairro: "Centro",
+            cidade: "São Paulo",
+            uf: "SP"
+        };
+
+        function ondeMora(cidade, uf, bairro, rua, numero) {
+            return "O usuário mora em " + cidade + "/" + uf + ", no  bairro " + bairro + ", na rua " + rua +
+            " com nº " + numero + "."
+
+        }
+
+        document.write(ondeMora(endereco.cidade, endereco.uf, endereco.bairro, endereco.rua, endereco.numero));
+    </script>
+</body>
+
+</html>
