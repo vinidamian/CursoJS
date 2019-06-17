@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso JavaScript</title>
+    </head>
+
+    <body>
+
+            <button id="botao">Novo quadrado</button>
+            <div id="quadrados"></div>
+
+            <script>
+          
+              var btnElement = document.getElementById('botao');   
+              var quadradosElement = document.getElementById('quadrados');
+
+              btnElement.onclick = function () {
+          
+                var quadrado = document.createElement('div');
+          
+                quadrado.style.width = '100px';
+                quadrado.style.height = '100px';
+                quadrado.style.backgroundColor = '#666';
+          
+                quadradosElement.appendChild(quadrado);
+              };
+          
+            </script>
+        </script>
+    </body>
+</html>
